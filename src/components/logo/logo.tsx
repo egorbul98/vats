@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './logo.module.scss';
 import { Link } from '../link/link';
-import KitchenOutlinedIcon from '@mui/icons-material/KitchenOutlined';
+// import Stockpot from '@mui/icons-material/Abc';
 
 export const Logo = () => {
     return (
         <Link className={styles.logo} href="/">
-            <KitchenOutlinedIcon className={styles.icon} />
+            {/* <Stockpot className={styles.icon} /> */}
 
-            <span>ПрофХолод</span>
+            <span>МскЧан</span>
         </Link>
     );
 };

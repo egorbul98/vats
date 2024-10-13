@@ -10,7 +10,7 @@ html,
 body{
     @include text-18;
     @include font-fam-sans;
-    color: $color-black;
+    color: $color-text;
 
     font-feature-settings: none;
     font-variant-ligatures: none;
@@ -34,9 +34,9 @@ a, button {
 
 a{
     text-decoration: none;
-    color: $color-blue;
+    color: $color-text;
 
     &:hover{
-        color: $color-blue-hover;
+        color: $color-blue-light-hover;
     }
 }

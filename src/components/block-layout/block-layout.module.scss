@@ -46,8 +46,16 @@
    }
 }
 
-.background-blue-light{
-   background-color: $color-blue-light;
+.background-primary{
+   background-color: $color-primary;
+
+   .title, .description{
+      color: #fff;
+   }
+}
+
+.background-primary-light{
+   background-color: $color-primary-light;
 }
 
 .innerContainer > div{

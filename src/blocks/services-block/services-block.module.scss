@@ -29,17 +29,17 @@
     cursor: pointer;
 
     &:hover{
-        background: $color-blue-light-hover;
+        background: $color-primary-light-hover;
 
         .title{
-            background: $color-blue-hover;
+            background: $color-primary-hover;
         }
     }
 
     .title{
         font-weight: bold;
         text-align: center;
-        background: $color-blue;
+        background: $color-primary;
         color: #fff;
         padding: 12px;
         text-transform: uppercase;
@@ -67,7 +67,7 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background: $color-blue;
+        background: $color-primary;
         display: block;
         margin-top: 8px;
         margin-right: 8px;

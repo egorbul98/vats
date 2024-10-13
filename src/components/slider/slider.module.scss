@@ -21,7 +21,7 @@
 }
 
 .navigationButton{
-    background: $color-blue;
+    background: $color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@
     }
 
     &:hover{
-        background: $color-blue-hover;
+        background: $color-primary-hover;
     }
 
     .icon{

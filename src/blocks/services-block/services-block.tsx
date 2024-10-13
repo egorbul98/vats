@@ -45,7 +45,7 @@ export const ServicesBlock = ({ onClickItem }: Props) => {
             title="Стоимость ремонта"
             description="Что случилось?"
             id="services"
-            backgroundColor="blue-light"
+            backgroundColor="primary-light"
             paddingBottom
             paddingTop
         >

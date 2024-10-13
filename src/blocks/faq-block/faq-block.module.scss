@@ -11,7 +11,7 @@
 }
 
 .faqItem{
-    border: 1px solid $color-blue-light;
+    border: 1px solid $color-primary-light;
     border-top: none;
 
     &.expaned{
@@ -23,8 +23,8 @@
 
 .title{
     border: none;
-    background-color: $color-blue-light;
-    color: $color-black;
+    background-color: $color-primary-light;
+    color: $color-text;
     @include text-24;
     cursor: pointer;
     padding: 24px 18px;
@@ -37,7 +37,7 @@
     position: relative;
 
     &:hover{
-        background-color: $color-blue-light-hover;
+        background-color: $color-primary-light-hover;
     }
 }
 

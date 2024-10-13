@@ -118,8 +118,5 @@
         font-weight: bold;
         @include text-24;
 
-        &:hover{
-            color: $color-blue-light-hover;
-        }
     }
 }

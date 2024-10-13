@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { Container } from '../container/container';
 import { Anchor } from '../anchor/anchor';
 
-type Colors = 'blue' | 'blue-light' | 'gray' | 'white';
+type Colors = 'primary' | 'primary-light' | 'blue' | 'white';
 
 interface Props {
     children?: React.ReactNode;

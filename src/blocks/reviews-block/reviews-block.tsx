@@ -43,7 +43,7 @@ export const ReviewsBlock = () => {
             title="Отзывы"
             description="Мы благодарны за отзывы и предложения — нам важно знать ваше мнение."
             id="reviews"
-            backgroundColor="blue-light"
+            backgroundColor="primary-light"
             paddingBottom
             paddingTop
         >

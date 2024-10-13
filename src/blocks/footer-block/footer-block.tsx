@@ -22,7 +22,7 @@ export const FooterBlock = ({ navLinks }: Props) => {
 
     return (
         <footer>
-            <BlockLayout paddingTop paddingBottom backgroundColor="blue-light">
+            <BlockLayout paddingTop paddingBottom backgroundColor="primary-light">
                 <div className={styles.innerContainer}>
                     <nav className={styles.navLinks}>
                         {navLinks.map((item) => {

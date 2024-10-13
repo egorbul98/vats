@@ -1,7 +1,7 @@
 @import "../../styles/_includes.scss";
 
 .overlay{
-    background: rgba(0, 0, 0, 0.354);
+    background: rgba(0, 0, 0, 0.82);
     position: fixed;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@
     top: 20%;
     left: 50%;
     transform: translateX(-50%) scale(0.5);
-    background: #fff;
+    background: $color-primary;
     padding: 48px;
     transition: all 0.3s;
 

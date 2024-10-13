@@ -10,15 +10,15 @@
    font-weight: 500;
 
    &.primary{
-      background: $color-blue;
+      background: $color-blue-light;
 
       &:hover{
-         background: $color-blue-hover;
+         background: $color-blue-light-hover;
       }
    }
 
    &.secondary{
-      color: $color-black;
+      color: $color-text;
       background: $color-blue-light;
 
       &:hover{

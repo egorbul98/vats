@@ -2,11 +2,11 @@
 
 .header{
     height: $header-height;
-    border-bottom: 1px solid $color-blue-light-hover;
+    border-bottom: 1px solid $color-primary-light-hover;
     position: sticky;
     top: 0;
     z-index: 2;
-    background: #fff;
+    background: $page-background;
     box-shadow: $box-shadow;
 
     @include screen-m-and-lesser{

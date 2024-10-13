@@ -4,11 +4,14 @@
 $sidebar-width: 140px;
 $sidebar-width-m: 122px;
 
+.container{
+    background: $page-background;
+}
 
 .sidebar{
     height: 100%;
     position: fixed;
-    background: $color-blue-light;
+    background: $page-background;
     width: $sidebar-width;
     box-shadow: $box-shadow;
     z-index: 3;

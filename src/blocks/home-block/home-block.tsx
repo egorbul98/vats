@@ -14,22 +14,20 @@ import {
 } from '../../components/feedback-form/constants';
 import { callMaster } from '../../api/call-master';
 
-import LocalShipping from '@mui/icons-material/LocalShippingOutlined';
-import BuildCircleOutlined from '@mui/icons-material/BuildCircleOutlined';
-import Handyman from '@mui/icons-material/HandymanOutlined';
+import CheckCircle from '@mui/icons-material/CheckCircleOutline';
 
 const listData = [
     {
-        label: 'Срочный выезд в день обращения',
-        icon: <LocalShipping />,
+        label: 'Отправляем чаны по всей России. Бесплатная доставка в 30 км от МКАД',
+        icon: <CheckCircle />,
     },
     {
-        label: 'Бесплатная диагностика (при согласии на ремонт)',
-        icon: <BuildCircleOutlined />,
+        label: 'Большой выбор чанов в разных размерах вместимостью от 3 до 9 человек',
+        icon: <CheckCircle />,
     },
     {
-        label: 'Оригинальные запчасти в наличии',
-        icon: <Handyman />,
+        label: 'Все чаны приходят в собранном виде, сборка не требуется',
+        icon: <CheckCircle />,
     },
 ];
 
@@ -54,9 +52,12 @@ export const HomeBlock = ({ openSuccessModal }: { openSuccessModal?: () => void 
             </div>
             <Container className={styles.innerContainer}>
                 <div className={styles.top}>
-                    <h1 className={styles.title}>Профессиональный и&nbsp;качественный ремонт холодильников</h1>
+                    <h1 className={styles.title}>Надежные бaнные чaны пoд ключ</h1>
                     <div className={styles.subtitle}>
-                        Выезд на&nbsp;дом в&nbsp;Москве и&nbsp;области в&nbsp;день обращения!
+                        Печи и&nbsp;чаши выполнены в&nbsp;едином стиле, который обеспечивает не только эстетичный вид,
+                        но и&nbsp;особую прочность конструкции. Все элементы надёжно сварены между собой. Наши печи
+                        с&nbsp;высоким КПД могут нагреть воду за&nbsp;2&nbsp;часа — это один из&nbsp;главных критериев
+                        при выборе банного чана.
                     </div>
                 </div>
 

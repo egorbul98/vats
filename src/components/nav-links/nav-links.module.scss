@@ -18,7 +18,7 @@
         height: 108px;
         padding: 0 10px;
         font-weight: 500;
-        color: $color-black;
+        color: $color-text;
 
         @include screen-l-and-lesser{
             height: 100px;
@@ -53,7 +53,7 @@
 
         &:hover{
             background: #fff;
-            background: $color-blue-light-hover;
+            background: $color-primary-light-hover;
 
             .icon{
                 svg{
