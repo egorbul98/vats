@@ -1,0 +1,46 @@
+@import "../../styles/_includes.scss";
+
+
+.list{
+    display: flex;
+    margin: -8px;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 33.33%;
+    padding: 8px;
+
+    @include screen-m-and-lesser{
+        width: 50%;
+    }
+
+    @include screen-xs{
+        width: 100%;
+    }
+}
+
+.card{
+    background: $color-blue-light;
+    text-align: center;
+    padding: 24px;
+    height: 100%;
+
+    .title{
+        margin-top: 16px;
+        font-weight: bold;
+
+        @include screen-s-and-lesser{
+            margin-top: 8px;
+        }
+    }
+
+    .description{
+        margin-top: 16px;
+    }
+}
+
+.icon svg{
+    font-size: 80px;
+    color: $color-blue;
+}

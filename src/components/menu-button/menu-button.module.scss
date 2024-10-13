@@ -1,0 +1,42 @@
+@import "../../styles/_includes.scss";
+
+.menuButton{
+    background: transparent;
+    border: none;
+    height: $header-height-s-and-lesser;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: -32px;
+    cursor: pointer;
+    transition: $transition;
+
+    @include screen-xs{
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: -16px;
+    }
+
+    @include screen-xxs{
+        height: $header-height-xxs;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: -12px;
+    }
+
+    &:hover{
+        color: $color-blue;
+    }
+
+    span{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1;
+
+        @media screen and (max-width: 590px) {
+            svg{
+                margin-bottom: -2px;
+            }
+        }
+    }
+
+}

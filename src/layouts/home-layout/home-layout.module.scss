@@ -1,0 +1,74 @@
+@import "../../styles/_includes.scss";
+
+
+$sidebar-width: 140px;
+$sidebar-width-m: 122px;
+
+
+.sidebar{
+    height: 100%;
+    position: fixed;
+    background: $color-blue-light;
+    width: $sidebar-width;
+    box-shadow: $box-shadow;
+    z-index: 3;
+
+    @include screen-m-and-lesser{
+        width: $sidebar-width-m;
+    }
+
+    @include screen-s-and-lesser{
+        position: fixed;
+        right: 100%;
+        top: $header-height-s-and-lesser;
+        width: 100%;
+        height: calc(100vh - $header-height-s-and-lesser);
+        transition: all 0.3s;
+        overflow: auto;
+        padding-bottom: 40px;
+
+        &.openMenu{
+            right: 0;
+        }
+    }
+
+    @include screen-xxs{
+        top: $header-height-xxs;
+        height: calc(100vh - $header-height-xxs);
+    }
+}
+
+.sidebarContacts{
+    display: none;
+    margin-top: 16px;
+    padding-left: 16px;
+    
+    @media screen and (max-width: 710px){
+        display: block;
+    }
+}
+
+.sidebarLogo{
+    display: none;
+    margin-top: 16px;
+    padding-left: 16px;
+    
+    @media screen and (max-width: 450px) {
+        display: block;
+    }
+}
+
+
+.content{
+    width: 100%;
+    padding-left: $sidebar-width;
+
+    @include screen-m-and-lesser{
+        padding-left: $sidebar-width-m;
+    }
+
+    @include screen-s-and-lesser{
+        padding-left: 0;
+    }
+}
+

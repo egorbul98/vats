@@ -1,0 +1,42 @@
+@import '_includes.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    @include text-18;
+    @include font-fam-sans;
+    color: $color-black;
+
+    font-feature-settings: none;
+    font-variant-ligatures: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input, textarea{
+    @include text-16;
+    @include font-fam-sans;
+}
+
+body {
+    position: relative;
+}
+
+a, button {
+    @include font-fam-sans;
+    transition: $transition;
+}
+
+a{
+    text-decoration: none;
+    color: $color-blue;
+
+    &:hover{
+        color: $color-blue-hover;
+    }
+}

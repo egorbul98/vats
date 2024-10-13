@@ -1,0 +1,40 @@
+@import "../../styles/_includes.scss";
+
+
+.navigation{
+    margin-bottom: 32px;
+
+    @include screen-m-and-lesser{
+        margin-bottom: 24px;
+    }
+}
+
+.card{
+    background: #fff;
+    padding: 24px;
+}
+
+.name{
+    @include text-24;
+}
+
+.content{
+    margin-top: 32px;
+
+    @include screen-m-and-lesser{
+        margin-top: 16px;
+    }
+}
+
+.date{
+    margin-top: 32px;
+}
+
+.rating{
+    margin-top: 16px;
+    color: gold;
+
+    svg{
+        font-size: 27px;
+    }
+}

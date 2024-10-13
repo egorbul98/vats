@@ -1,0 +1,36 @@
+@import "../../styles/_includes.scss";
+
+.anchor{
+   display: block;
+   visibility: hidden;
+   position: relative;
+   top: -$header-height;
+
+   @include screen-m-and-lesser{
+      top: -$header-height-m-and-lesser;
+   }
+
+   @include screen-s-and-lesser{
+      top: -$header-height-s-and-lesser;
+   }
+
+   @include screen-xxs{
+      top: -$header-height-xxs;
+   }
+
+   &.offset{
+      top: calc(0px - $header-height - 8px);
+
+      @include screen-m-and-lesser{
+         top: calc(0px - $header-height-m-and-lesser - 8px);
+      }
+   
+      @include screen-s-and-lesser{
+         top: calc(0px - $header-height-s-and-lesser - 8px);
+      }
+   
+      @include screen-xxs{
+         top: calc(0px - $header-height-xxs - 8px);
+      }
+   }
+}

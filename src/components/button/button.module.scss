@@ -1,0 +1,38 @@
+@import "../../styles/_includes.scss";
+
+.button{
+   @include text-16;
+   cursor: pointer;
+   color: #fff;
+   padding: 17px 24px;
+   border: none;
+   outline: none;
+   font-weight: 500;
+
+   &.primary{
+      background: $color-blue;
+
+      &:hover{
+         background: $color-blue-hover;
+      }
+   }
+
+   &.secondary{
+      color: $color-black;
+      background: $color-blue-light;
+
+      &:hover{
+         background: $color-blue-light-hover;
+      }
+   }
+}
+
+.fullWidth{
+   width: 100%;
+}
+
+.fullWidthMobile{
+   @include screen-xs{
+      width: 100%;
+   }
+}

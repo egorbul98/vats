@@ -1,0 +1,105 @@
+@import "../../styles/_includes.scss";
+
+.links{
+    @include screen-s-and-lesser{
+       margin-top: 32px;
+    }
+
+    @include screen-xs{
+       margin-top: 12px;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 108px;
+        padding: 0 10px;
+        font-weight: 500;
+        color: $color-black;
+
+        @include screen-l-and-lesser{
+            height: 100px;
+        }
+
+        @media screen and (max-height: 720px) {
+            height: 100px;
+        }
+
+        @media screen and (max-height: 700px) {
+            height: 92px;
+        }
+
+        @media screen and (max-height: 625px) {
+            height: 80px;
+        }
+
+        @include screen-s-and-lesser{
+            padding-left: 0;
+            height: auto;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+
+        @include screen-xs{
+            padding-left: 16px;
+        }
+
+        &:hover{
+            background: #fff;
+            background: $color-blue-light-hover;
+
+            .icon{
+                svg{
+                    transition: $transition;
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+
+    .label{
+        transition: $transition;
+        margin-top: 10px;
+
+        @include screen-m-and-lesser{
+            margin-top: 8px;
+            @include text-16;
+        }
+
+        @include screen-s-and-lesser{
+            margin-top: 0;
+            @include text-24;
+        }
+
+        @include screen-xs{
+            @include text-18;
+        }
+    }
+
+    
+}
+
+
+.icon{
+    display: flex;
+
+    @include screen-s-and-lesser{
+        margin-right: 16px;
+    }
+
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+
+    svg{
+        font-size: 32px;
+    }
+    
+}

@@ -1,0 +1,94 @@
+@import "../../styles/_includes.scss";
+
+.header{
+    height: $header-height;
+    border-bottom: 1px solid $color-blue-light-hover;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    @include screen-m-and-lesser{
+        height: $header-height-m-and-lesser;
+    }
+
+    @include screen-s-and-lesser{
+        height: $header-height-s-and-lesser;
+    }
+
+    @include screen-xxs{
+        height: $header-height-xxs;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    @include screen-xxs{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+.leftBlock{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    @media screen and (max-width: 590px) {
+        display: none;
+    }
+}
+
+.contacts{
+    margin-left: 80px;
+
+    @include screen-m-and-lesser{
+        margin-left: 40px;
+    }
+
+    @media screen and (max-width: 710px){
+        display: none;
+    }
+}
+
+.contactsMobile{
+    display: none;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media screen and (max-width: 710px){
+        display: block;
+    }
+
+    @media screen and (max-width: 590px) {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+}
+
+.buttonConsult button{
+    @include screen-xxs{
+        @include text-14;
+        padding: 10px;
+    }
+}
+
+.desktop{
+    @include screen-s-and-lesser{
+        display: none;
+    }
+}
+
+.mobile{
+    display: none;
+
+    @include screen-s-and-lesser{
+        display: block;
+    }
+}

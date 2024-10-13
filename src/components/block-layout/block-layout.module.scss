@@ -1,0 +1,57 @@
+@import "../../styles/_includes.scss";
+
+.title{
+   @include font-h2;
+}
+
+.description{
+   @include font-h3;
+
+   margin-top: 16px;
+}
+
+.content{
+   margin-top: 40px;
+
+   @include screen-s-and-lesser{
+      margin-top: 32px;
+   }
+}
+
+.contentWithoutPaddings .content{
+   margin-top: 0;
+}
+
+.paddingTop{
+   padding-top: 60px;
+
+   @include screen-s-and-lesser{
+      padding-top: 40px;
+   }
+}
+
+.paddingBottom{
+   padding-bottom: 60px;
+
+   @include screen-s-and-lesser{
+      padding-bottom: 40px;
+   }
+}
+
+.background-blue{
+   background-color: $color-blue;
+
+   .title, .description{
+      color: #fff;
+   }
+}
+
+.background-blue-light{
+   background-color: $color-blue-light;
+}
+
+.innerContainer > div{
+   &:first-child{
+      margin-top: 0;
+   }
+}

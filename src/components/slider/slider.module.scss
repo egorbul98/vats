@@ -1,0 +1,54 @@
+@import "../../styles/_includes.scss";
+
+.swiperWrapper{
+    position: relative;
+}
+
+.slide{
+    cursor: grab;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    right: 0;
+    z-index: 5;
+
+    @include screen-s-and-lesser{
+        display: none;
+    }
+}
+
+.navigationButton{
+    background: $color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: none;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+
+    &:first-child{
+        margin-right: 12px;
+    }
+
+    &:hover{
+        background: $color-blue-hover;
+    }
+
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        svg{
+            stroke: white;
+            stroke-width: 0.3px;
+            font-size: 27px;
+        }
+    }
+}

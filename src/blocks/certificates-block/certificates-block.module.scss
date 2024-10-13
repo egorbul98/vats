@@ -1,0 +1,30 @@
+@import "../../styles/_includes.scss";
+
+.imageWrap{
+    cursor: grab;
+    height: 400px;
+    padding: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include screen-s-and-lesser{
+        height: 320px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+.swiper{
+    margin: 0 -8px;
+}
+
+.navigation{
+    margin-bottom: 32px;
+}

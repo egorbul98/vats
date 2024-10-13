@@ -1,0 +1,35 @@
+@import "../../styles/_includes.scss";
+
+
+.list{
+    display: flex;
+    margin: -8px;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 20%;
+    padding: 8px;
+
+    @include screen-s-and-lesser{
+        width: 33.33%;
+    }
+}
+
+.imageWrap{
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.button{
+    max-width: 300px;
+    width: 100%;
+    margin: 32px auto 0;
+    display: block;
+
+    @include screen-s-and-lesser{
+        margin-top: 16px;
+    }
+}

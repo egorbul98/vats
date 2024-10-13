@@ -1,0 +1,85 @@
+@import "../../styles/_includes.scss";
+
+
+.innerContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navLinks{
+    @include screen-m-and-lesser{
+        width: 50%;
+    }
+
+    @include screen-xs{
+        width: 100%;
+    }
+
+    .item{
+        margin-bottom: 8px;
+    }
+}
+
+.contacts{
+    padding-left: 64px;
+
+    @include screen-m-and-lesser{
+        width: 50%;
+        padding-left: 0;
+    }
+
+    @include screen-xs{
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .field{
+        margin-bottom: 16px;
+    }
+}
+
+.payments{
+    padding-left: 64px;
+
+    @include screen-l-and-lesser{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        padding-left: 0;
+    }
+
+    @include screen-xs{
+        margin-top: 16px;
+    }
+
+    & > div{
+        margin-bottom: 8px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        @include screen-l-and-lesser{
+            margin-right: 8px;
+            margin-bottom: 0;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    & svg{
+        height: 30px;
+    }
+}
+
+.copyright{
+    @include text-16;
+    margin-top: 32px;
+    width: 100%;
+
+    @include screen-xs{
+        margin-top: 16px;
+    }
+}

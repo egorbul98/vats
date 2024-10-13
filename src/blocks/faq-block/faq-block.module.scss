@@ -1,0 +1,53 @@
+@import "../../styles/_includes.scss";
+
+
+.list{
+    margin: -8px;
+}
+
+.item{
+   width: 100%;
+   padding: 8px;
+}
+
+.faqItem{
+    border: 1px solid $color-blue-light;
+    border-top: none;
+
+    &.expaned{
+        .icon{
+            transform: rotate(-180deg) translateY(-4px);
+        }
+    }
+}
+
+.title{
+    border: none;
+    background-color: $color-blue-light;
+    color: $color-black;
+    @include text-24;
+    cursor: pointer;
+    padding: 24px 18px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover{
+        background-color: $color-blue-light-hover;
+    }
+}
+
+.icon{
+    font-size: 34px !important;
+    line-height: 24px !important;
+    padding-top: 4px;
+    transition: $transition;
+}
+
+.content{
+    padding: 18px;
+}

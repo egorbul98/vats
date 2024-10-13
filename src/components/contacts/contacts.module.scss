@@ -1,0 +1,52 @@
+@import "../../styles/_includes.scss";
+
+.capture{
+    @include text-14;
+    margin-top: 6px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.iconPhone{
+    color: #fff;
+    border-radius: 50%;
+    background-color: #eb0a1e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    padding: 4px;
+
+    svg{
+        font-size: 16px;
+    }
+}
+
+.variant-s{
+    .iconPhone{
+        display: none;
+    }
+
+    .phone{
+        @include text-16;
+
+        @include screen-xxs{
+            @include text-14;
+        }
+    }
+
+    .capture{
+        margin-top: 0;
+    }
+    
+    .hiddenMob{
+        @media screen and (max-width: 710px){
+            display: none;
+        }
+    }
+   
+}
